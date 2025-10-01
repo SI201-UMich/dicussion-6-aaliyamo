@@ -84,6 +84,12 @@ class PollReader():
         """
         harris_max = max(self.data_dict['Harris result'])
         trump_max = max(self.data_dict['Trump result'])
+        if harris_max > trump_max:
+            return f"Harris with {harris_max}%"
+        elif trump_max > harris_max:
+            return f"Trump with {trump_max}%"
+        else:
+            return f"EVEN with {harris_max}%"
         pass
 
 
