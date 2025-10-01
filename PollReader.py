@@ -101,6 +101,10 @@ class PollReader():
             tuple: A tuple containing the average polling percentages for Harris and Trump
                    among likely voters, in that order.
         """
+        harris_total = 0
+        trump_total = 0
+        count = 0 
+    
         pass
 
 
